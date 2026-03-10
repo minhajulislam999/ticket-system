@@ -2,7 +2,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 justify-between items-start flex-wrap">
+    <>
+    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-items-start">
   <nav className="max-w-xs">
     <h6 className="footer-title">CS — Ticket System</h6>
    <p>
@@ -48,7 +49,18 @@ Track tickets in progress, resolve problems quickly, and keep everything organiz
       
        Support@gmail.com</a>
   </nav>
+
+ 
 </footer>
+
+<div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full justify-items-center"> 
+  <hr className="border-gray-600" />
+  <p className="text-center text-sm text-gray-500 py-4">
+    &copy; 2024 CS — Ticket System. All rights reserved.
+  </p>
+
+</div>
+</>
   )
 }
 
