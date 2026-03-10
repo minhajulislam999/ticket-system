@@ -1,16 +1,48 @@
-# React + Vite
+what is JSX, and why is it used?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ANS:
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+JSX stands for JavaScript XML. It is a syntax used in react that allows to write HTML inside JavaScript. JSX code easier to read and understand. react converts JSX regular JavaScript using babel
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+what is the deference between State and Props?
 
-## Expanding the ESLint configuration
+ANS:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+(a)  
+
+Props are used to pass data from a parent component to child component. Props are read-only, which means they cannot be changed by the child component.
+
+(b)
+State is used to store data inside a component. State can change over time,  and when it changes, React automatically updates the UI.
+
+
+Q : What is the useState hook, and how does it work?
+
+ANS:
+
+useState is a react hook that allows functional components to have state. it returns two values: the current sate and a function to update that statel.
+
+for example: const [count, setCount] = useState(0)
+
+here count is the current state value, and setCount is used to update the state. when the state changes, React re-renders the component.
+
+
+Q: How can you share state between components in React?
+
+ANS:
+
+state can be shared between components by lifting the state up. this means parent component shared State to child by using props.
+
+
+Q: How is event handling done in React
+
+ANS:
+
+
+event handling in React is done using event handlers like onClick, onChange, onSubmit. these handlers call a function when an event occurs.
+
+for example: <button onClick={handleClick}>Click Me</button>
+
+here handleClick is a function that runs when the button is clicked.
